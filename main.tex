@@ -145,15 +145,30 @@ Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.  nec luctus magna 
 
 \section{Introduction}
 
-Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+Pretty much all of the information you need to build a document in Overleaf can be found through their very user friendly help section at \url{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}.
 
-WOW! Just look at Figure \ref{fig:Chick-orthodox}.
 
-Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
-Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+These random words that you see below are called "ipsum lorem", and you can read about them at this interesting \href{https://en.wikipedia.org/wiki/Lorem_ipsum}{Wikipedia link}  which uses the 'hyperref' package.
 
 Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
 
+WOW! Just look at Figure \ref{fig:Chick-orthodox}. Is a great way to automatically include your figure numbers in your text, without having to figure out what the actual number is yourself. You will see that the "\textbackslash label:Chick-orthodox" line in the figure below is used to reference that object. And to be able to type a "\textbackslash " in regular text you have to write \textbackslash textbackslash - which is a bit of a pain, but the \textbackslash is used to control all the commands in LaTeX so it is an unfortunate necessity.
+
+Whenever you note a fact, you will always need to reference where you got it from. If you make a statement about how something works, or what the truth about a situation is, you also need to explain who was able to show it, or how you are able to show it (i.e. refer to the evidence). to do this you need to refer to literature or data etc.
+
+It could just be an argument that has been made by several people \citep{bell2001role,wray2006}.
+
+Or by just one person, for example, we could note that \citet{stone1966} was one of the early researchers to help develop the United Nations National Accounts.
+
+Or if you use a direct quote, or a reference from a book, you will also need to include the page number. For example, \citet[p.~150]{chickdow2002} noted that orthodox economic methodology is not necessarily the most appropriate to use for economic analysis, where so many of the issues are normative.
+
+\citepos{zezza2004circuit} article can be referenced as in possessive terms (i.e. his article)
+
+
+
+\textbf{This is really bold font, that you might want to emphasise.}
+
+You can also insert a "page break" using the "newpage" command.. like this: \textbackslash newpage
 
 \newpage
 Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
@@ -161,14 +176,70 @@ Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.95\columnwidth]{images/chick2003modeofthought.pdf}
-    \caption{Orthodox economic mode of thinking: Cartesian}
+    \caption{Orthodox economic mode of thinking: Cartesian \citep{chick2003}}
     \label{fig:Chick-orthodox}
 \end{figure}
 
-Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.\footnote{This is just a footnote.}
 
+\emph{I really really want to emphasise this text with italics}
 
+\subsection{The subsection is available if you need it}
 
+Sometimes you want to include a really important piece of text, as a quote from a specific author. This is a bad habit and you should really be writing what the other author has said in your own words. but just in case here is a long quote:
+
+\begin{quote}
+``Adam Smith's position depends on the truth of the proposition that, if
+the baker or the brewer wants meat from the butcher, but has (the latter
+being sufficiently supplied with bread and beer) nothing to offer in
+exchange, no exchange can be made between them.'' \ldots{} ``Assuming
+the baker and the brewer to be honest men, and honesty is no modern
+virtue, the butcher could take from them an acknowledgement that they
+had bought from him so much meat, and all we have to assume is that the
+community would recognise the obligation of the baker and the brewer to
+redeem these acknowledgements in bread or beer at the relative values
+current in the village market, whenever presented to them, and we at
+once have a good and sufficient currency. A sale, according to this
+theory, is not the exchange of a commodity for intermediate commodity
+called the''medium if exchange," but the exchange of a commodity for a
+credit."
+\end{quote}
+
+\subsubsection{If you need to extend into a further sub-subsection}
+
+When you try to compartmentalise all of your text in sub-sub-sub-sub sections it becomes more difficult to read. So if you can avoid going into too many subsections it makes the reader's job a bit easier.
+
+\section{The next main section just needs a section command}
+
+In this section we will insert some rather complex equations. You will notice that LaTeX really cleverly numbers the equations for you. Just as you could for the Figure above, you can also refer to you equations by their labels (and get LaTeX to create the number for you).
+
+As in .. wow... Equation (\ref{eq:Yht}) is quite a long equation.
+
+They could be really simple:
+
+\begin{equation}
+YD^H_t = Y^H_t - T^H_t
+\end{equation}
+
+Or they could be really complex, for example, sometimes they don't fit all in one line, and you need to break them up:
+
+\begin{equation}
+\begin{split}
+Y^H_t = & WB^H_t + B2^H_{t} + r^H_{A_{t-1}}(IBA^H_{t-1})\\
+        & - r^H_{L(FI)_{t-1}}(IBL(FI)^H_{t-1})\\
+        & - r^H_{L(FL)_{t-1}}(IBL(FL)^H_{t-1})\\
+        & + \chi _t(EQA^H_{t-1}) + \psi _t(PENA^H_{t-1}) + STR^H_t + \epsilon ^H
+\label{eq:Yht}
+\end{split}
+\end{equation}
+
+Sometimes you also want to have fractions in your equations, and those can also be automatically created using the "frac" command, like this:
+
+\begin{equation}
+yd^H_t = \frac{YD^H_t}{P^c_t}
+\end{equation}
+
+One of the neatest things about LaTeX is that it generates a bibliography for you automatically.
 
 \newpage
 \linespread{1}
