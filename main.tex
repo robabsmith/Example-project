@@ -1,4 +1,4 @@
-\documentclass[english,a4paper,12pt]{article}
+ \documentclass[english,a4paper,12pt]{article}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -143,12 +143,13 @@ Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.  nec luctus magna 
 \linespread{1.5}
 \selectfont
 
-\section{Introduction}
+\section{Introduction} \label{sec:intro}
 
 Pretty much all of the information you need to build a document in Overleaf can be found through their very user friendly help section at \url{https://www.overleaf.com/learn/how-to/Creating_a_document_in_Overleaf}.
 
-
 These random words that you see below are called "ipsum lorem", and you can read about them at this interesting \href{https://en.wikipedia.org/wiki/Lorem_ipsum}{Wikipedia link}  which uses the 'hyperref' package.
+
+Superscript in text, for a date 9\textsuperscript{th}
 
 Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
 
@@ -164,23 +165,25 @@ Or if you use a direct quote, or a reference from a book, you will also need to 
 
 \citepos{zezza2004circuit} article can be referenced as in possessive terms (i.e. his article)
 
-
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/chick2003modeofthought.pdf}
+    \caption{Mode of thought}
+    \label{fig:Chick-orthodox}
+\end{figure}
 
 \textbf{This is really bold font, that you might want to emphasise.}
+
+This is a new reference for \cite{khalilkinsella2015}, and if you want it to be possessive you can use citepos \citepos{khalilkinsella2015}.
+
+My new reference that I just added from google scholar is included \citep[p.~75]{malkiel1989efficient}.
 
 You can also insert a "page break" using the "newpage" command.. like this: \textbackslash newpage
 
 \newpage
 Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.95\columnwidth]{images/chick2003modeofthought.pdf}
-    \caption{Orthodox economic mode of thinking: Cartesian \citep{chick2003}}
-    \label{fig:Chick-orthodox}
-\end{figure}
-
-Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.\footnote{This is just a footnote.}
+ \citep{chick2003}
+Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, c Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.\footnote{This is just a footnote.}
 
 \emph{I really really want to emphasise this text with italics}
 
